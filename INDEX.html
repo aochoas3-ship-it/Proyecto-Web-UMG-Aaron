@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de sistemas</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+
+    <!-- 1. Enlace CSS de bxSlider de la red -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <script src="https://kit.fontawesome.com/2600c6ce36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <header class="main-header">
+        <div class="header-left">
+            <i class="fa-solid fa-circle-h logo-icon"></i>
+            <h1 class="brand-title">MI GRAN VIDA</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="LOGIN.HTML">Inicio Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="contenedor-slider">
+        <div class="slider">
+            <!-- Cambia "imagen1.jpg", etc., por las rutas reales de tus imágenes -->
+            <div><img src="IMG/foto-niñosla.jpeg" alt="Foto 1" style="width:100%; display:block;"></div>
+            <div><img src="IMG/foto-grandesla.jpeg" alt="Foto 2" style="width:100%; display:block;"></div>
+            <div><img src="IMG/molly.jpeg" alt="Foto 3" style="width:100%; display:block;"></div>
+        </div>
+    </div>
+
+
+    <div class="contenedor-bloque">
+       
+        <section>
+            <h2>MIS INICIOS</h2>
+            <p>
+               Empecemos por el principio mi nombre es Aron y mi vida cambio cuando aquella araña radioactiva me pico
+               jajsja ahora si enserio. Todo comienza un 15 de enero en 2008 yo Aaron Ochoa estaba llorando en un hospital a 
+               altas horas de la manaña nací a las 5 am porque a las 6 ya tenia que entrar a trabajar.</p>
+
+               <p> Mi niñez fue bastante normal la verdad y paso demasiado rapida 😭 curse todos lo grados corespondientes 
+                como niño responsable que soy y nunca perdi un año (wtf las personas que pierden el año) 
+                y siempre me gustaron las computadoras. </p>
+
+                <p>Tambien Pokemon y las apuestas y naruto y las bolsas de nicotica y el redbull de sandia y y y...
+                </p>
+        </section>
+
+          
+        <section class="fila-columnas">
+         
+            <div class="columna">
+                <h3>Mis Principios</h3>
+                <p>No, no hay muchos la verdad pero segurante la empatía, la honestidad y el crecimiento constante. Creo firmemente en la importancia de ponerme en el lugar de los demás para entender sus perspectivas, construyendo así relaciones basadas en el respeto y el apoyo mutuo.</p>
+            </div>
+
+       
+            <div class="columna">
+                <h3>Mis Valores</h3>
+                <p>el respeto, la responsabilidad y la gratitud. Entiendo el respeto como la base de toda convivencia, valorando la diversidad de opiniones y tratando a cada persona con la dignidad que merece.</p>
+            </div>
+
+          
+            <div class="columna">
+                <h3>Mis Metas</h3>
+                <p>Trabajo con disciplina para liderar proyectos innovadores y seguir creciendo en mi carrera, buscando siempre la excelencia en lo que hago.  </p>
+            </div>
+         </section>
+    </div>
+
+    
+    <section class="parrafo-completo">
+        <div class="contenedor-bloque" style="padding: 0;">
+            <h2>VISION A FUTURO</h2>
+            <p>
+                Mi visión a futuro es convertirme en un ingeniero en sistemas que
+                 transforme el entorno empresarial mediante la creación de soluciones 
+                 digitales innovadoras. Me proyecto diseñando y comercializando software 
+                 estratégico que resuelva problemas operativos complejos y optimice la
+                  eficiencia de las organizaciones. Este éxito profesional y espíritu 
+                  emprendedor no es un fin en sí mismo, sino el medio para asegurar el
+                   bienestar y la estabilidad de mi familia. Mi meta final es construir
+                    un legado sólido, donde el fruto de mi trabajo tecnológico me
+                    permita retribuir el apoyo de mis seres queridos y compartir con ellos una vida plena.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mi Primera Página Web. Todos los derechos reservados.</p>
+        <i class="fa fa-phone"></i> 
+        <p>5964-7068</p>
+    </footer>
+
+    <!-- 2. Scripts de jQuery y bxSlider de la red (Justo antes de cerrar el body) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- 3. Inicialización del Slider -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: false,        /* Hace que se mueva solo */
+                pause: 4000,       /* Tiempo en milisegundos entre cada foto */
+                mode: 'horizontal' /* Movimiento hacia los lados */
+            });
+        });
+    </script>
+
+</body>
+</html>

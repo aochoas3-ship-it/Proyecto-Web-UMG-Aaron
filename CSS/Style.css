@@ -1,0 +1,459 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 16px;               
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* --- CONTENEDOR GENERAL --- */
+/* Envuelve el contenido para que no toque los bordes de la pantalla */
+.contenedor-bloque {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- SECCIÓN 2: TRES COLUMNAS EN FILA --- */
+.fila-columnas {
+    display: flex;
+    flex-direction: row;       /* Pone los elementos uno al lado del otro */
+    justify-content: space-between; /* Deja espacio uniforme entre columnas */
+    gap: 20px;                 /* Separación interna entre las cajas */
+    margin: 40px 0;
+}
+
+.columna {
+    flex: 1;                   /* Hace que las 3 columnas midan exactamente lo mismo */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;        /* Bordes redondeados para las cajitas */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* --- SECCIÓN 3: PÁRRAFO DE MARGEN A MARGEN --- */
+.parrafo-completo {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 40px 0;
+    text-align: justify;       /* Alinea el texto de forma pareja en los bordes */
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+
+
+/* =======================================================================
+   ESTILOS DE CABECERA (Alinea el menú y los enlaces a la derecha)
+   ======================================================================= */
+.main-header {
+    display: flex;
+    justify-content: space-between; /* Título a la izquierda, menú a la derecha */
+    align-items: center;            /* Centrado vertical */
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Línea sutil divisoria inferior */
+}
+
+/* Bloque contenedor del logotipo y texto de marca */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Icono médico */
+.logo-icon {
+    font-size: 32px;
+    color: #0056b3; /* Azul médico */
+}
+
+/* Nombre de la clínica */
+.brand-title {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #002855;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Lista horizontal de enlaces */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 25px; /* Espacio de separación entre cada opción */
+}
+
+/* Estilo de los textos de menú */
+.main-nav a {
+    text-decoration: none;
+    color: #555555;
+    font-family: Arial, sans-serif; /* Usamos Arial para mantener la estética limpia del original */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Cambio de color interactivo */
+.main-nav a:hover {
+    color: #0056b3;
+}
+
+/* Esto quita el azul predeterminado y la línea de subrayado a todos los enlaces del menú */
+.main-nav a, 
+.main-nav a:visited {
+    color: #555555 !important;
+    text-decoration: none !important;
+}
+
+/* Esto cambia el color solo cuando pasas el mouse por encima */
+.main-nav a:hover {
+    color: #0056b3 !important;
+}
+
+
+/* --- ESTILOS PARA LA PÁGINA INDEPENDIENTE DE LOGIN --- */
+
+/* Centra todo el contenido vertical y horizontalmente en la pantalla */
+.body-login {
+    background-color: #6c5eb9c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Caja contenedora blanca */
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 13px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.login-box h2 {
+    margin-top: 0;
+    color: #002855;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Campos de texto */
+.login-box .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.login-box .input-group label {
+    font-size: 14px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.login-box .input-group input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.login-box .input-group input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+/* Botón de Ingresar */
+.login-box .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 15px;
+}
+
+.login-box .btn-submit:hover {
+    background-color: #002855;
+}
+
+/* Enlace de regreso */
+.btn-regresar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.btn-regresar:hover {
+    color: #0056b3;
+}
+
+
+
+.btn-registrar {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #df1d9f;
+    font-size: 17px;
+    transition: color 0.2s;
+}
+
+.btn-regresar:hover {
+    color: #5e0e57;
+}
+
+
+/* --- ESTILOS PARA LA PÁGINA INDEPENDIENTE DE SIGN-IN --- */
+
+/* Centra todo el contenido vertical y horizontalmente en la pantalla */
+.body-sign-in {
+    background-color: #7d75abc5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Caja contenedora blanca */
+.sign-in-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 13px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.sign-in-box h2 {
+    margin-top: 0;
+    color: #002855;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Campos de texto */
+.sign-in-box .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sign-in-box .input-group label {
+    font-size: 14px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.sign-in-box .input-group input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.sign-in-box .input-group input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+/* Botón de Ingresar */
+.sign-in-box .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 15px;
+}
+
+.sign-in-box .btn-submit:hover {
+    background-color: #002855;
+}
+
+/* Enlace de regreso */
+.btn-registrar {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.btn-regresar:hover {
+    color: #0056b3;
+}
+
+
+/* --- ESTILOS PARA LA PÁGINA INDEPENDIENTE DE FORGET-PASSWORD --- */
+
+/* Centra todo el contenido vertical y horizontalmente en la pantalla */
+.body-FORGET-PASSWORD {
+    background-color: #7d75abc5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Caja contenedora blanca */
+.FORGET-PASSWORD-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 13px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.FORGET-PASSWORD-box h2 {
+    margin-top: 0;
+    color: #002855;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Campos de texto */
+.FORGET-PASSWORD-box .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.FORGET-PASSWORD-box .input-group label {
+    font-size: 14px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.FORGET-PASSWORD-box .input-group input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.FORGET-PASSWORD-box .input-group input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+/* Botón de Ingresar */
+.FORGET-PASSWORD-box .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 15px;
+}
+
+.FORGET-PASSWORD-box .btn-submit:hover {
+    background-color: #002855;
+}
+
+/* Enlace de regreso */
+.btn-contraseña-olvidada {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.btn-contraseña-olvidada:hover {
+    color: #0056b3;
+}
+
+
+.btn-contraseña-olvidada {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #df1d9f;
+    font-size: 17px;
+    transition: color 0.2s;
+}
+
+.btn-regresar:hover {
+    color: #5e0e57;
+}
+
+
+/* --- CONTENEDOR PARA ALINEAR LOS ENLACES EN FILA --- */
+.links-container {
+    display: flex;
+    justify-content: space-between; /* Separa un enlace a la izquierda y otro a la derecha */
+    align-items: center;           /* Los nivela verticalmente en la misma línea */
+    width: 100%;
+    margin-top: 15px;              /* Espacio de separación con el botón de Ingresar */
+}
+
+/* Forzar que los enlaces se comporten como elementos en línea dentro del contenedor */
+.btn-registrar, 
+.btn-contraseña-olvidada {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px; /* Ajusta el tamaño si lo deseas */
+}
+
+
+/* --- AJUSTAR EL TAMAÑO DEL SLIDER --- */
+.contenedor-slider {
+    width: 90%;            /* Ocupa el 90% del ancho de la pantalla en celulares */
+    max-width: 800px;      /* En computadoras, no va a medir más de 800px (puedes cambiarlo a 600px o 1000px) */
+    margin: 30px auto;     /* Separa el slider de los textos y lo centra perfectamente */
+}
+
+/* Controlar la altura máxima de las imágenes para que no se estiren */
+.slider img {
+    width: 100%;
+    height: 400px;         /* Fuerza a que todas midan 400px de alto (ajústalo a tu gusto) */
+    object-fit: cover;     /* Recorta la imagen de forma inteligente para que no se vea aplastada */
+    border-radius: 10px;   /* Opcional: Le da bordes redondeados estéticos a las fotos */
+}
